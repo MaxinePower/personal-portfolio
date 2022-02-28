@@ -1,3 +1,6 @@
+@import './partials/variables';
+
 body {
-    background-color: peachpuff;
+    font-size: 100px;
+    background-color: $primary;
 }
