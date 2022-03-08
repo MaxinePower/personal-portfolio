@@ -1,0 +1,62 @@
+@media (max-width: 900px) {
+    section {
+        width: 100%;
+    }
+    main {
+        align-items: center;
+    }
+    section:nth-child(2n) {
+        align-self: center;
+    }
+    .skills ul li {
+        flex: 1 0 calc(10% - 2%);
+    }
+}
+
+@media (max-width: 550px) {
+    section {
+        padding: 15px;
+    }
+
+    header {
+        font-size: 2.5rem;
+        padding: 0 5%;
+    }
+    h2, h3, p {
+        text-align: center;
+    }
+
+    .skills, .project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-form input {
+        width: 100%;
+    }
+
+    // navigation
+
+    header, main {
+        margin-left: 0px;
+    }
+    footer {
+        padding-left: 0px;
+    }
+    nav {
+        left: -100px;
+    }
+    // nav {
+    //     flex-direction: column;
+    //     width: 100px;
+    //     min-height: 100vh;
+    //     left: 0;
+    //     top: 0;
+    //     ul {
+    //         width: 100%;
+    //     }
+    //     li {
+    //         border-bottom: 2px solid $secondaryFontColour;
+    //     }
+    // }
+}

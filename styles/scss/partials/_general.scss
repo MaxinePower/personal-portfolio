@@ -30,11 +30,42 @@ nav a {
     }
 }
 
+h1, h2, h3 {
+    font-family: $headerFontType;
+    margin: 0;
+    margin-bottom: 10px;   
+}
 h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 h2 {
     font-size: 1.8rem;
+}
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    border: 3px solid $tertiaryAccentColour;
+    border-radius: 15px;
+}
+
+button, .project a {
+    background-color: $secondaryFontColour;
+    color: $tertiaryFontColour;
+    font-weight: 700;
+    &:hover, &:focus {
+        background-color: $tertiaryAccentColour;
+    }
+}
+
+// header styling
+header {
+    margin: 50px 0;
+    text-align: center;
 }
 
 // footer styling
