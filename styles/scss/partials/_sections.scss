@@ -19,6 +19,14 @@ section:nth-child(2n) {
 .about {
     display: flex;
     flex-direction: column;
+    // tiltin the big bear!!!
+    img {
+        transition: 1s linear;
+    }
+    
+    img:hover {
+        transform: rotate(-10deg);
+    }
 }
 
 // skills!

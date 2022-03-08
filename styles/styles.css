@@ -410,6 +410,14 @@ section:nth-child(2n) {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.about img {
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+.about img:hover {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
 
 .skills ul {
   display: -webkit-box;
