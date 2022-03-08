@@ -4,55 +4,180 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/5baaeeb670.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/styles.css">
     <title>My Site, Bitch</title>
 </head>
 <body>
-    <header>
+    <div class="wrapper">
         <nav>
             <ul>
-                <li class="current-page">
-                    <a href="#">
-                        <!-- icon -->
+                <li>
+                    <a href="#home">
+                        <i class="fas fa-home" aria-hidden="true"></i>
                         <p>Home</p>
                     </a>
                 </li>
                 <li>
-                    <a href="./pages/about-me.html">
-                        <!-- icon -->
+                    <a href="#about">
+                        <i class="far fa-user" aria-hidden="true"></i>
                         <p>About</p>
                     </a>
                 </li>
                 <li>
-                    <a href="./pages/skills.html">
-                        <!-- icon -->
+                    <a href="#skills">
+                        <i class="far fa-star" aria-hidden="true"></i>
                         <p>Skills</p>
                     </a>
                 </li>
                 <li>
-                    <a href="./pages/portfolio.html">
-                        <!-- icon -->
+                    <a href="#portfolio">
+                        <i class="fas fa-list" aria-hidden="true"></i>
                         <p>Portfolio</p>
                     </a>
                 </li>
                 <li>
-                    <a href="./pages/contact.html">
-                        <!-- icon -->
+                    <a href="#contact">
+                        <i class="far fa-address-book" aria-hidden="true"></i>
                         <p>Contact</p>
                     </a>
                 </li>
             </ul>
         </nav>
-        <section class="personal-overview">
-            
-        </section>
-    </header>
-    <main class="home">
-        <p>Welcome to my portfolio!</p>
-        <h1>Lorem Ipsum</h1>
-        <p>My Name is <em>redacted</em>. I'm a Front End Web Developer</p>
-    </main>
-
+        <header>
+            <section class="home" id="home">
+                <h1>Welcome to my portfolio!</h1>
+                <p class="greeting">Lorem Ipsum</p>
+                <p>My Name is <em>Redacted</em>. I'm a Front End Web Developer</p>
+            </section>
+        </header>
+        <main>
+            <section class="about" id="about">
+                <h2>About Me</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At hic illum incidunt amet! In, assumenda eveniet praesentium cupiditate amet id!</p>
+            </section>
+    
+            <section class="skills" id="skills">
+                <h2>Skills</h2>
+                <h3>lorem ipsum dolor</h3>
+                <ul>
+                    <li>
+                        <i class="fab fa-html5" aria-hidden="true"></i>
+                        <p>HTML5</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-css3-alt" aria-hidden="true"></i>
+                        <p>CSS3</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-js-square" aria-hidden="true"></i>
+                        <p>JavaScript</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-sass" aria-hidden="true"></i>
+                        <p>Sass</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-react" aria-hidden="true"></i>
+                        <p>React</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                        <p>Github</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-universal-access" aria-hidden="true"></i>
+                        <p>Accessibility</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                        <p>Responsive Design</p>
+                    </li>
+                    <!-- <li>
+                        icon currently unavailable on v5 fontawesome, may have to upgrade
+                        <span class="sr-only">Firebase</span>
+                    </li> -->
+                    <!-- <li>
+                        icon currently unavailable on v5 fontawesome, may have to upgrade
+                        <span class="sr-only">VS Code</span>
+                    </li> -->
+                    
+                </ul>
+            </section>
+    
+            <section class="portfolio" id="portfolio">
+                <div class="portfolio-overview">
+                    <h2>Portfolio</h2>
+                    <p>look at projects i have touched!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="portfolio-gallery">
+                    <ul>
+                        <li class="project">
+                            <h3>A Project Name!</h3>
+                            <p>a couple sentence long description of the project. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo laborum illum molestiae!</p>
+                            <a href="#">View It Live!</a>
+                            <a href="#">Check Out The Code!</a>
+                        </li>
+                        <li class="project">
+                            <h3>A Project Name!</h3>
+                            <p>a couple sentence long description of the project. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo laborum illum molestiae!</p>
+                            <a href="#">View It Live!</a>
+                            <a href="#">Check Out The Code!</a>
+                        </li>
+                        <li class="project">
+                            <h3>A Project Name!</h3>
+                            <p>a couple sentence long description of the project. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo laborum illum molestiae!</p>
+                            <a href="#">View It Live!</a>
+                            <a href="#">Check Out The Code!</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+    
+            <section class="contact" id="contact">
+                <div class="contact-info">
+                    <div class="title">
+                        <h2>Contact</h2>
+                        <p>lorem ipsum dolor</p>
+                    </div>
+                    <div class="my-links">
+                        <a href="https://www.linkedin.com/in/maxine-power">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                            <span class="sr-only">Maxine Power on LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/MaxinePower">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                            <span class="sr-only">MaxinePower on GitHub</span>
+                        </a>
+                        <a href="mailto:maxine@power.sh">
+                            <i class="far fa-envelope" aria-hidden="true"></i>
+                            <span class="sr-only">email: maxine@power.sh</span>
+                        </a>
+                    </div>
+                </div>
+    
+                <form action="" class="contact-form">
+                    <div class="identity">
+                        <label for="name" class="sr-only">Name:</label>
+                        <input id="name" type="text" placeholder="Name">
+                        <label for="email" class="sr-only">Email:</label>
+                        <input type="text" id="email" placeholder="example@email.com">
+                    </div>
+                    <label for="message" class="sr-only">Message:</label>
+                    <textarea id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>Made at <a href="https://junocollege.com">Juno College Of Technology</a>. Icons from <a href="https://fontawesome.com/v6/search">Font Awesome</a>. Fonts from <a href="https://fonts.google.com/">Google</a>.</p>
+    </footer>
+    
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,66 @@
+// base section styling
+section {
+    border: 1px solid $textContrastColour;
+    border-radius: 20px;
+    background-color: $textContrastColour;
+    margin: 30px;
+    padding: 30px;
+    width: 65%;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+section:nth-child(2n) {
+    align-self: flex-end;
+}
+
+// header section
+.home {
+    width: 100%;
+}
+
+// skills!
+.skills {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            margin: 20px;
+            text-align: center;
+            transition-duration: 0.4s;
+            &:focus, &:hover {
+                i, p {
+                    color: $tertiaryAccentColour; 
+                }
+                transform: scale(1.2);
+            }
+        }
+        i {
+            font-size: 2.4rem;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+// contact
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+}
+.my-links {
+    a {
+        text-decoration: none;
+        &:focus, &:hover {
+            i {
+                color: $tertiaryAccentColour;
+                transform: scale(1.2);
+            }
+        }
+    }
+    i {
+        font-size: 1.7rem;
+        margin-left: 15px;
+    }
+}

@@ -1,0 +1,38 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    input, textarea, button {
+    color: $tertiaryFontColour;
+    border: 3px solid $tertiaryAccentColour;
+    // background-color: $secondaryFontColour;
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 1rem;
+    }
+    input, textarea {
+        &:focus, &:hover {
+            background-color: $secondaryFontColour;
+        }
+    }
+    div.identity {
+        display: flex;
+        justify-content: space-between;
+    }
+    input {
+        width: 49%;
+    }
+    textarea {
+        align-self: center;
+        width: 100%;
+    }
+    button {
+        background-color: $secondaryFontColour;
+        &:hover, &:focus {
+            background-color: $tertiaryAccentColour;
+        }
+    }
+    // ::placeholder {
+    // }
+}

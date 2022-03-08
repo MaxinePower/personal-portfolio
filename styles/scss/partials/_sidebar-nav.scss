@@ -1,0 +1,45 @@
+header, main {
+    margin-left: 100px;
+}
+footer {
+    padding-left: 100px;
+}
+
+nav {
+    background-color: $textContrastColour;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    min-height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    ul {
+        width: 100%;
+    }
+    li {
+        text-align: center;
+        min-height: 60px;
+        border-bottom: 2px solid $secondaryFontColour;
+    }
+    a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        width: 100%;
+        text-decoration: none;
+        transition-duration: 0.6s;
+        &:hover, &:focus {
+            p, i{
+                color: $tertiaryFontColour; 
+            }
+            background-color: $secondaryFontColour;
+            transform: rotate(10deg);
+        }
+    }
+    i {
+        margin-bottom: 7px;
+    }
+}

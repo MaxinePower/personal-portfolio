@@ -1,6 +1,6 @@
 @import './partials/setup';
 @import './partials/variables';
-
-body {
-    background-color: $primary;
-}
+@import './partials/general';
+@import './partials/sidebar-nav';
+@import './partials/sections';
+@import './partials/form';
