@@ -34,7 +34,9 @@ section:nth-child(2n) {
     ul {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         li {
+            max-width: 110px;
             margin: 20px;
             text-align: center;
             transition-duration: 0.3s;

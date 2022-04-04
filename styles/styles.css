@@ -474,8 +474,12 @@ section:nth-child(2n) {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .skills ul li {
+  max-width: 110px;
   margin: 20px;
   text-align: center;
   -webkit-transition-duration: 0.3s;
@@ -616,14 +620,17 @@ section:nth-child(2n) {
             flex: 1 0 8%;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   section {
     padding: 15px;
   }
 
   header {
-    font-size: 2.5rem;
     padding: 0 5%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
   }
 
   h2, h3, p {
@@ -641,6 +648,20 @@ section:nth-child(2n) {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+
+  .contact-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .my-links {
+    margin-top: 15px;
   }
 
   .contact-form input {
