@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Lobster&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Fira+Sans:wght@400;500;700&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/5baaeeb670.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/styles.css">
     <title>My Site!</title>
@@ -48,14 +48,14 @@
             </ul>
         </nav>
         <header class="home" id="home">
-            <h1>Welcome to my portfolio!</h1>
-            <p>My Name is <em>Redacted</em>. I'm a Front End Web Developer</p>
+            <h1>Welcome to my Portfolio!</h1>
+            <p>My Name is Maxine Power. I'm a Front End Web Developer.</p>
         </header>
         <main>
             <section class="about" id="about">
                 <img src="./assets/bear6.jpg" alt="bear6. that's all that needs to be said for those who will be viewing this site while its still so unfinished">
                 <h2>About Me</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At hic illum incidunt amet! In, assumenda eveniet praesentium cupiditate amet id!</p>
+                <p>I am a Front-End Web Developer with experience building responsive sites using HTML5, CSS3, SCSS, JS, JQuery and React. I have a passion for accessibility in the tech industry and an avid interest in using and devloping my skills to make sites accessible to all users.</p>
             </section>
     
             <section class="skills" id="skills">
@@ -109,11 +109,36 @@
             <section class="portfolio" id="portfolio">
                 <div class="portfolio-overview">
                     <h2>Portfolio</h2>
-                    <p>look at projects i have touched!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Look at projects I have touched!</p>
                 </div>
                 <div class="portfolio-gallery">
                     <ul>
+                        <li class="project">
+                            <h3>Kittens Galore: Image Generator</h3>
+                            <div class="skills-used">
+                                <i class="fab fa-react" aria-hidden="true"></i>
+                                <i class="fab fa-html5" aria-hidden="true"></i>
+                                <i class="fab fa-css3-alt" aria-hidden="true"></i>
+                                <i class="fab fa-js-square" aria-hidden="true"></i>
+                                <p class="sr-only">React, HTML5, CSS3, JS</p>
+                            </div>
+                            <p>A fun cat image generator! This React based app uses RESTful API calls to return to the user images of cats that comply with the user’s chosen category.</p>
+                            <a href="https://kittens-galore.netlify.app">View It Live!</a>
+                            <a href="https://github.com/MaxinePower/project3">Check Out The Code!</a>
+                        </li>
+                        <li class="project">
+                            <h3>Spoiled Eggs: Bad Movie Generator</h3>
+                            <div class="skills-used">
+                                <i class="fab fa-html5" aria-hidden="true"></i>
+                                <i class="fab fa-css3-alt" aria-hidden="true"></i>
+                                <i class="fab fa-sass" aria-hidden="true"></i>
+                                <i class="fab fa-js-square" aria-hidden="true"></i>
+                                <p class="sr-only">HTML5, CSS3, Sass, JS</p>
+                            </div>
+                            <p>A JavaScript based app using REST API calls to dynamically present the user with terrible movies, based on their preferred era and genre.</p>
+                            <a href="https://spoiled-eggs-movies.netlify.app/">View It Live!</a>
+                            <a href="https://github.com/MaxinePower/project2">Check Out The Code!</a>
+                        </li>
                         <li class="project">
                             <h3>Restaurant Mall</h3>
                             <div class="skills-used">
@@ -125,31 +150,6 @@
                             <p>Responsive multi-page site that advertises and promotes clients restaurants. Uses clean semantic HTML5 and SCSS/CSS3, to bring to life the clients proposed design.<p>
                             <a href="https://inspiring-tesla-eccdb5.netlify.app/">View It Live!</a>
                             <a href="https://github.com/MaxinePower/maxine-power-project-1">Check Out The Code!</a>
-                        </li>
-                        <li class="project">
-                            <h3>Spoiled Eggs: Bad Movie Generator</h3>
-                            <div class="skills-used">
-                                <i class="fab fa-html5" aria-hidden="true"></i>
-                                <i class="fab fa-css3-alt" aria-hidden="true"></i>
-                                <i class="fab fa-sass" aria-hidden="true"></i>
-                                <i class="fab fa-js-square" aria-hidden="true"></i>
-                                <p class="sr-only">HTML5, CSS3, Sass, JS</p>
-                            </div>
-                            <p>a couple sentence long description of the project. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo laborum illum molestiae!</p>
-                            <a href="https://spoiled-eggs-movies.netlify.app/">View It Live!</a>
-                            <a href="https://github.com/MaxinePower/project2">Check Out The Code!</a>
-                        </li>
-                        <li class="project">
-                            <h3>A Project Name!</h3>
-                            <div class="skills-used">
-                                <i class="fab fa-html5" aria-hidden="true"></i>
-                                <i class="fab fa-css3-alt" aria-hidden="true"></i>
-                                <i class="fab fa-sass" aria-hidden="true"></i>
-                                <p class="sr-only">HTML5, CSS3, Sass</p>
-                            </div>
-                            <p>a couple sentence long description of the project. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo laborum illum molestiae!</p>
-                            <a href="#">View It Live!</a>
-                            <a href="#">Check Out The Code!</a>
                         </li>
                     </ul>
                 </div>
@@ -177,15 +177,15 @@
                     </div>
                 </div>
     
-                <form action="" class="contact-form" id="contact-form">
+                <form name="contact" data-netlify="true" class="contact-form" id="contact-form">
                     <div class="identity">
                         <label for="name" class="sr-only">Name:</label>
-                        <input id="name" type="text" placeholder="Name">
+                        <input id="name" name="name" type="text" placeholder="Name">
                         <label for="email" class="sr-only">Email:</label>
-                        <input type="text" id="email" placeholder="example@email.com">
+                        <input type="text" name="email" id="email" placeholder="example@email.com">
                     </div>
                     <label for="message" class="sr-only">Message:</label>
-                    <textarea id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                    <textarea id="message" name="message" cols="30" rows="10" placeholder="Message"></textarea>
                     <button type="submit">Send Message</button>
                 </form>
             </section>

@@ -15,7 +15,8 @@ html {
     font-family: $baseFontType;
 }
 body {
-    background: linear-gradient($primaryAccentColour, $secondaryAccentColour);
+    background: linear-gradient($primaryAccentColour 10%, $secondaryAccentColour 100%);
+    // background: linear-gradient($primaryAccentColour, $secondaryAccentColour);
     background-repeat: no-repeat;
     min-height: 100vh;
     position: relative;
@@ -29,34 +30,40 @@ nav a {
         font-size: 1rem;
     }
 }
-
+p {
+    line-height: 1.5;
+}
 h1, h2, h3 {
+    color: $tertiaryAccentColour;
     font-family: $headerFontType;
     margin: 0;
     margin-bottom: 10px;   
 }
 h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 20px;
+    color: $secondaryFontColour;
 }
 h2 {
     font-size: 1.8rem;
 }
 h3 {
-    font-size: 1.5rem;
+    font-weight: 500;
+    font-size: 1.35rem;
     margin-bottom: 20px;
 }
 
 img {
     max-width: 100%;
     border: 3px solid $tertiaryAccentColour;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 button, .project a {
     background-color: $secondaryFontColour;
     color: $tertiaryFontColour;
     font-weight: 700;
+    transition-duration: 0.3s;
     &:hover, &:focus {
         background-color: $tertiaryAccentColour;
     }
@@ -64,8 +71,23 @@ button, .project a {
 
 // header styling
 header {
-    margin: 50px 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+    height: 90vh;
+    position: relative;
+}
+// this is not clickable and therefore not every good UX maybe maing it an html element with a scoll function
+header::after {
+    content:'\142F';
+    font-weight: 500;
+    font-size: 2.5rem;
+    position: absolute;
+    bottom: 0;
+    animation: gentleBounce 2.5s infinite;
 }
 
 // footer styling
@@ -78,5 +100,11 @@ footer {
     text-align: center;
     a:hover, a:focus {
         color: $secondaryFontColour;
+    }
+}
+// defining down arrow animation
+@keyframes gentleBounce {
+    50% {
+        transform: translateY(15px);
     }
 }
